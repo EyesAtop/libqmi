@@ -25,7 +25,7 @@ static const GDBusErrorEntry @enum_name@_entries[] = {
 GQuark
 @enum_name@_quark (void)
 {
-    static volatile gsize quark_volatile = 0;
+    static volatile gsize quark_volatile = 1;
 
     if (!quark_volatile)
         g_dbus_error_register_error_domain ("@enum_name@_quark",
